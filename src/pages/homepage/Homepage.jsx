@@ -22,10 +22,20 @@ const Homepage = () => {
     <div className="fullpage w-full">
       <section className="firstSect px-40  pb-20 ">
         <div>
-          <img className="w-[40vw] mx-auto" src={phone} alt="phone" />
+          <div className="containerImg">
+            <img
+              className="moving-image w-[40vw] mx-auto"
+              src={phone}
+              alt="phone"
+            />
+          </div>
           <div className="flex justify-between">
-            <img src={airpods} alt="airpods" />
-            <img src={watch} alt="watch" />
+            <div className="contAirpods">
+              <img className="movingAirpodsImg" src={airpods} alt="airpods" />
+            </div>
+            <div className="contWatch">
+              <img className="movingWatchImg" src={watch} alt="watch" />
+            </div>
           </div>
           <div>
             <p className="naura text-center text-9xl font-bold">Naura</p>
@@ -71,7 +81,7 @@ const Homepage = () => {
             <p className="text-5xl">‘Send 60k to Mom’</p>
           </div>
         </div>
-        <div className="flex mt-20 gap-40">
+        <div className="flex mt-20 gap-20">
           <div className="w-[50%] bg-slate-800 p-20 rounded-[50px] ">
             <img className="" src={chat} alt="chat" />
 
@@ -240,7 +250,7 @@ const Homepage = () => {
                 <p>Automate Payment</p>
               </div>
               <div className="w-[8%] h-[10rem] flex flex-col items-center justify-center text-center">
-                <img src={bill} alt="bill" />
+                <img className="w-[100% ] h-[100%]" src={bill} alt="bill" />
                 <p>Make Bill Payment</p>
               </div>
               <div className="w-[8%] h-[10rem] flex flex-col items-center text-center">
