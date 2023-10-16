@@ -14,6 +14,8 @@ import send from "../../assets/images/icon/send.png";
 import support from "../../assets/images/icon/support.png";
 import swap from "../../assets/images/icon/swap.png";
 import vCard from "../../assets/images/icon/vCard.png";
+// import Foot from "../../components/footer/Foot"
+import logo from "../../assets/images/logo.png"
 
 import "./Homepage.css";
 
@@ -320,33 +322,58 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="my-[5rem]">
-        <p className="font-[TT Travels Next Trl] font-semibold text-5xl italic text-center">
+      <section className="my-[5rem] px-40">
+        <p className="font-[TT Travels Next Trl] font-semibold text-white my-12 text-5xl italic text-center">
           Go even further with Naura.
         </p>
-        <div className="flex gap-4xl">
-          <div
-            className="rounded-4xl h-[24rem] p-[4rem] bg-[#254039
-] "
-          >
+        <div className="flex gap-8">
+          <div className="rounded-3xl flex-1 h-[34rem] p-[6rem] text-center text-4xl text-white font-[Avenir] bg-[#254039] ">
             <p>Works only with your Voice</p>
           </div>
-          <div
-            className="rounded-4xl h-[24rem] p-[4rem] bg-[#EBCFCC
-
-] "
-          >
-            <p>Works only with your Voice</p>
+          <div className="rounded-3xl flex-1 h-[34rem] p-[6rem] text-center text-4xl text-white font-[Avenir] bg-[#EBCFCC] ">
+            <p>Speaks your language</p>
           </div>
-          <div
-            className="rounded-4xl h-[24rem] p-[4rem] bg-[#5B49AE
-
-] "
-          >
-            <p>Works only with your Voice</p>
+          <div className="rounded-3xl flex-1 h-[34rem] p-[6rem] text-center text-4xl text-white font-[Avenir] bg-[#5B49AE] ">
+            <p>Compatible with any device</p>
           </div>
         </div>
+        
       </section>
+      <footer>
+      <div className="text-sm mt-20 px-40">
+          <p>
+            1. Available in English (Australia, Canada, United Kingdom, U.S.).
+            This feature is not available on AirPods with the H1 headphone chip
+            and Intel-based Mac computers. Devices must support and have the
+            latest operating system.
+          </p>
+          <p>
+            2.Available in English (Australia, Canada, United Kingdom, U.S.) on
+            iPhone 11 and later, iPad Pro 12.9-inch (3rd generation and later),
+            iPad Pro 11-inch (1st generation and later), iPad Air (3rd
+            generation and later), iPad mini (5th generation and later), iPad
+            (8th generation and later), AirPods, and CarPlay. Devices must
+            support and have the latest operating system.
+          </p>
+          <p>
+            3. CarPlay support is either standard or available as an option on
+            many new 2016 cars and later, with some manufacturers offering
+            software updates for earlier models. Some models may support CarPlay
+            only in certain configurations, and not all models are available in
+            all areas. CarPlay support is subject to change. See your dealer for
+            details. “Hey Siri” and “Siri” support requires a compatible
+            vehicle.
+          </p>
+
+          <div className='flex justify-between mt-20 mb-8'>
+        <img src={logo} alt='NauraLogo'/>
+        <p className='text-sm'>Copyright © 2023 NauraFinance Inc. All rights reserved.</p>
+
+        </div>
+        </div>
+        
+        
+      </footer>
     </div>
   );
 };
